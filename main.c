@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cristinasansegundo <cristinasansegundo@    +#+  +:+       +#+        */
+/*   By: csan-seg <csan-seg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 12:13:24 by cristinasan       #+#    #+#             */
-/*   Updated: 2024/02/20 14:26:16 by cristinasan      ###   ########.fr       */
+/*   Updated: 2024/02/21 13:58:03 by csan-seg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 
 int main(void)
 {
-/*     int i;
+    int i;
     int fd;
     char *line;
     
@@ -25,10 +25,10 @@ int main(void)
     while (i < 7)
     {
         line = get_next_line(fd);
-        printf("%s\n", line);
+        printf("<%s>\n", line);
         if (line)
             free(line);
         i++;
-    } */
+    }
     return (0);
 }

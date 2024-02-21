@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: cristinasansegundo <cristinasansegundo@    +#+  +:+       +#+        */
+/*   By: csan-seg <csan-seg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 12:06:25 by cristinasan       #+#    #+#             */
-/*   Updated: 2024/02/20 13:48:42 by cristinasan      ###   ########.fr       */
+/*   Updated: 2024/02/21 14:29:32 by csan-seg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,15 +16,17 @@
 
 #ifndef BUFFER_SIZE
 
-# define BUFFER_SIZE 1000
+# define BUFFER_SIZE 3
 
 #endif
 
 # include <unistd.h>
 # include <stdlib.h>
 
-size_t  ft_strlen(char *str);
+size_t	ft_strlen(char *str);
+char	*ft_strdup(char *str);
 char	*get_next_line(int fd);
-char    *ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
+int		search_char(char c, char *str);
 
 #endif
