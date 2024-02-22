@@ -6,7 +6,7 @@
 /*   By: csan-seg <csan-seg@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/28 11:46:41 by cristinasan       #+#    #+#             */
-/*   Updated: 2024/02/21 14:31:16 by csan-seg         ###   ########.fr       */
+/*   Updated: 2024/02/22 12:16:05 by csan-seg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,11 +58,11 @@ void	read_line(int fd, char **save, char *buf)
 			if (*save)
 				free(*save);
 			*save = NULL;
-			break;
+			break ;
 		}
 		buf[read_bytes] = '\0';
 		if (read_bytes == 0)
-			break;
+			break ;
 		tmp = *save;
 		*save = update_save(*save, buf);
 		free(tmp);
@@ -77,7 +77,7 @@ char	*get_final_line(char **save)
 	{
 		free(*save);
 		*save = NULL;
-		return (NULL);	
+		return (NULL);
 	}
 	line = ft_strdup(*save);
 	free(*save);
@@ -120,4 +120,3 @@ char	*get_next_line(int fd)
 	free(buf);
 	return (ft_getline(&save));
 }
-
